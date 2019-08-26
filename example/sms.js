@@ -7,7 +7,7 @@ var SMS = new IdeaMart.SMS({
   url: 'http://localhost:7000/sms/send'
 });
 
-// Send a text message to the customer
+// Send a text message to multiple customers
 SMS.sendTextMessage({
   destination: ["tel:94777484484","tel:94771234567"], //Send to multiple destinations
   message: 'This is a test. I hope you get this message.',
@@ -16,7 +16,7 @@ SMS.sendTextMessage({
   console.log(status);
 });
 
-// Send a text message to multiple customers
+// Send a text message to the customer
 SMS.sendTextMessage({
   destination: "tel:94777484484", //Send to single destination
   message: 'This is a test. I hope you get this message.',
